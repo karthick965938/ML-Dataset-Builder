@@ -1,1 +1,1 @@
-from .image_process import PrepareImage, RenameFiles
+from .image_process import *
