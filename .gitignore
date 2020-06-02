@@ -3,4 +3,4 @@ dist/
 images/
 MLDatasetBuilder.egg-info/
 # ignore setup
-/setup.py
+setup.py
