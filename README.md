@@ -1,6 +1,8 @@
 # MLDatasetBuilder
 Python package for build ***Dataset for Machine Learning***
 
+[![logo](https://github.com/karthick965938/ML-Dataset-Builder/blob/master/logo.png)](https://pypi.org/project/MLDatasetBuilder/)
+
 [![python version](https://img.shields.io/badge/Python-3.6-yellow)](https://pypi.org/project/MLDatasetBuilder/)
 [![PyPI](https://img.shields.io/badge/pypi-v0.0.3-blue)](https://pypi.org/project/MLDatasetBuilder/)
 
