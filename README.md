@@ -30,4 +30,4 @@ ExtractImages(video_path, filename, framesize)
 #ExtractImages('video.mp4', 'frame', 10)
 ```
 # Contact
-MLDatasetBuilder was created by [Karthick Nagarajan](https://github.com/karthick965938). Feel free to reach out on [Twitter](https://twitter.com/Karthick965938) or through [Email!](karthick965938@gmail.com)
+MLDatasetBuilder was created by [Karthick Nagarajan](https://stackoverflow.com/users/6295641/karthick-nagarajan?tab=profile). Feel free to reach out on [Twitter](https://twitter.com/Karthick965938) or through [Email!](karthick965938@gmail.com)
