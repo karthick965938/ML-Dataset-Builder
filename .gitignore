@@ -1,6 +1,6 @@
 build/
 dist/
-assets/
+test_assets/
 MLDatasetBuilder.egg-info/
 # ignore setup
 setup.py
