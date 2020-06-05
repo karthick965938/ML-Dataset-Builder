@@ -18,6 +18,12 @@ pip install MLDatasetBuilder
 ```
 ### Available Operations
 
+we can get images from Google. Using the [Download All Images](https://chrome.google.com/webstore/detail/download-all-images/ifipmflagepipjokmbdecpmjbibjnakm?hl=en) browser extension we can easily get images in a few minutes. You can check out [here](https://www.youtube.com/watch?v=ik1VxrtN7m8&feature=youtu.be) for more details about this extension!
+
+
+![logo](https://github.com/karthick965938/ML-Dataset-Builder/blob/master/assets/step_01.gif)
+
+
 1) ***Remove*** unwanted format images and ***Rename*** image files
 
 ```sh
@@ -30,11 +36,7 @@ ExtractImages(video_path, filename, framesize)
 #ExtractImages('video.mp4', 'frame', 10)
 ```
 
-## Step1 - Get images from google
-Yes, we can get images from Google. Using the [Download All Images](https://chrome.google.com/webstore/detail/download-all-images/ifipmflagepipjokmbdecpmjbibjnakm?hl=en) browser extension we can easily get images in a few minutes. You can check out [here](https://www.youtube.com/watch?v=ik1VxrtN7m8&feature=youtu.be) for more details about this extension!
-
-
-![logo](https://github.com/karthick965938/ML-Dataset-Builder/blob/master/assets/step_01.gif)
+### Step2 - Extract images from video
 
 # Contact
 MLDatasetBuilder was created by [Karthick Nagarajan](https://stackoverflow.com/users/6295641/karthick-nagarajan?tab=profile). Feel free to reach out on [Twitter](https://twitter.com/Karthick965938) or through [Email!](karthick965938@gmail.com)
