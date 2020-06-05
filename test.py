@@ -1,4 +1,5 @@
-from MLDatasetBuilder import PrepareImage, RenameFiles
+from MLDatasetBuilder import PrepareImage, RenameFiles, ExtractImages
 # Working
-PrepareImage('images', 'dog')
+PrepareImage('assets/images', 'dog')
 # RenameFiles('rename_images', 'dog')
+# ExtractImages('assets/video.mp4', 'filename')
