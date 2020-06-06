@@ -4,7 +4,7 @@ Python package for build ***Dataset for Machine Learning***
 [![python version](https://img.shields.io/badge/Python-3.6-yellow)](https://pypi.org/project/MLDatasetBuilder/)
 [![PyPI](https://img.shields.io/badge/pypi-v0.0.3-blue)](https://pypi.org/project/MLDatasetBuilder/)
 
-Whenever we begin a machine learning project, the first thing that we need is a dataset. Dataset will be the pillar of training model. You can build the dataset either automatically or manually. MLDatasetBuilder is a python package which is help to prepare image for your ML dataset.
+MLDatasetBuilder is a python package which is help to prepare image for your ML dataset. Whenever we begin a machine learning project, the first thing that we need is a dataset. Dataset will be the pillar of training model. You can build the dataset either automatically or manually.
 
 **Author**: Karthick Nagarajan
 
