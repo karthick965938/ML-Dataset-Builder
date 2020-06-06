@@ -41,12 +41,12 @@ Once you have downloaded the images using this extension, you can create a pytho
 
 ```sh
 download_image_folder/
-|   _14e839ba-9691-11ea-a968-2ed746e9a968.jpg
-|   5e5f7af12600004018b602c0.jpeg
-|   A471529_Alice_b-1.jpg
-|   image1.png
-|   image2.png
-|   ...
+   _14e839ba-9691-11ea-a968-2ed746e9a968.jpg
+   5e5f7af12600004018b602c0.jpeg
+   A471529_Alice_b-1.jpg
+   image1.png
+   image2.png
+   ...
 test_python_file.py
 ```
 Inside the images folder, you can see lots of png images and random filenames.
