@@ -1,5 +1,5 @@
 from MLDatasetBuilder import PrepareImage, RenameFiles, ExtractImages
 # Working
-PrepareImage('assets/images', 'dog')
+# PrepareImage('assets/images', 'dog')
 # RenameFiles('rename_images', 'dog')
-# ExtractImages('assets/video.mp4', 'filename')
+ExtractImages('test_assets/dog.mp4', 'dog')
