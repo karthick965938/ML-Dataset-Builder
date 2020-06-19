@@ -3,8 +3,16 @@ import os
 import time
 import cv2
 from PIL import Image
+from asciimatics.renderers import FigletText
+from termcolor import colored, cprint
+from progress.bar import ShadyBar
+
+# ANCI LOGO
+text = colored(FigletText("MLDatasetBuilder", font='big'), 'blue')
+
 # allow .jpg and .jpeg format only
 def PrepareImage(dir, file_name=None):
+  print(text)
   print('Image Process Start')
   for i, file in enumerate(os.listdir(dir)):
     path = pathlib.Path(dir + "/" + file)
@@ -30,6 +38,7 @@ def ExtractImages(video_file, filename, framesize=5):
   time.sleep(5)
   rescale_images(filename, 800, 600)
 def frames_to_video(inputpath, outputpath, fps=5):
+  print(text)
   cap = cv2.VideoCapture(inputpath)
   count = 0
   index = 0

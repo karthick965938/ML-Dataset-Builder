@@ -4,3 +4,5 @@ test_assets/
 MLDatasetBuilder.egg-info/
 # ignore setup
 setup.py
+todo_python_package
+logo.py
