@@ -1,4 +1,4 @@
 opencv-python
-asciimatics
+art
 termcolor
 progress
