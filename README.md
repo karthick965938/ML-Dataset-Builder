@@ -4,7 +4,7 @@
 
 
 [![python version](https://img.shields.io/badge/Python-3.6-yellow)](https://pypi.org/project/MLDatasetBuilder/)
-[![PyPI](https://img.shields.io/badge/pypi-v0.0.3-blue)](https://pypi.org/project/MLDatasetBuilder/)
+[![PyPI](https://img.shields.io/badge/pypi-v0.0.8-blue)](https://pypi.org/project/MLDatasetBuilder/)
 
 
 **Author**: Karthick Nagarajan
