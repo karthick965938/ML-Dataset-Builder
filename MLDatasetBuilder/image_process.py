@@ -16,8 +16,9 @@ def PrepareImage(dir, file_name=None):
   bar = ShadyBar('Image  Processing', max=len(os.listdir(dir)))
   for i, file in enumerate(os.listdir(dir)):
     path = pathlib.Path(dir + "/" + file)
-    if (path.suffix != '.jpg' and path.suffix != '.jpeg'):
-      path.unlink()
+    if os.path.isfile(path):
+      if (path.suffix != '.jpg' and path.suffix != '.jpeg'):
+        path.unlink()
     time.sleep(0.005)
     bar.next()
   bar.finish()
@@ -32,7 +33,9 @@ def RenameFiles(dir, file_name):
   os.getcwd()
   bar = ShadyBar('Rename Processing', max=len(os.listdir(dir)))
   for i, filename in enumerate(os.listdir(dir)):
-    os.rename(dir + "/" + filename, dir + "/"+ file_name + str(i) + ".jpg")
+    path = pathlib.Path(dir + "/" + filename)
+    if os.path.isfile(path):
+      os.rename(dir + "/" + filename, dir + "/"+ file_name + str(i) + ".jpg")
     time.sleep(0.005)
     bar.next()
   bar.finish()
