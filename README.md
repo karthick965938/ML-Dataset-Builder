@@ -4,8 +4,9 @@
 
 
 [![python version](https://img.shields.io/badge/Python-3.6-yellow)](https://pypi.org/project/MLDatasetBuilder/)
-[![PyPI](https://img.shields.io/badge/pypi-v0.0.8-blue)](https://pypi.org/project/MLDatasetBuilder/)
-
+[![PyPI](https://img.shields.io/badge/pypi-v0.0.9-blue)](https://pypi.org/project/MLDatasetBuilder/)
+[![Downloads](https://pepy.tech/badge/mldatasetbuilder)](https://pepy.tech/project/mldatasetbuilder)
+[![Downloads](https://pepy.tech/badge/mldatasetbuilder/month)](https://pepy.tech/project/mldatasetbuilder/month)
 
 **Author**: Karthick Nagarajan
 
