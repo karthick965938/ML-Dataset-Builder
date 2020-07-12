@@ -1,10 +1,11 @@
-# MLDatasetBuilder
+# MLDatasetBuilder-Version 1.0.0
 
-**MLDatasetBuilder** is a python package that is helping to prepare images for your ML dataset. Whenever we begin a machine learning project, the first thing that we need is a dataset. Datasets will be the pillar of the training model. You can build the dataset either automatically or manually.
+**[MLDatasetBuilder-Version 1.0.0](https://pypi.org/project/MLDatasetBuilder/)** - A Python package to build Dataset for Machine Learning
+Whenever we begin a machine learning project, the first thing that we need is a dataset. Datasets will be the pillar of the training model. You can build the dataset either automatically or manually. MLDatasetBuilder is a python package which is helping to prepare the image for your ML dataset.
 
 
 [![python version](https://img.shields.io/badge/Python-3.6-yellow)](https://pypi.org/project/MLDatasetBuilder/)
-[![PyPI](https://img.shields.io/badge/pypi-v0.0.9-blue)](https://pypi.org/project/MLDatasetBuilder/)
+[![PyPI](https://img.shields.io/badge/pypi-v1.0.0-blue)](https://pypi.org/project/MLDatasetBuilder/)
 [![Downloads](https://pepy.tech/badge/mldatasetbuilder)](https://pepy.tech/project/mldatasetbuilder)
 [![Downloads](https://pepy.tech/badge/mldatasetbuilder/month)](https://pepy.tech/project/mldatasetbuilder/month)
 
@@ -18,19 +19,44 @@ We can install ***MLDatasetBuilder*** package using this command
 ```sh
 pip install MLDatasetBuilder
 ```
+
+### How to test?
+When you run python3 in the terminal, it will produce output like this:
+
+```sh
+Python 3.6.9 (default, Apr 18 2020, 01:56:04) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+```
+
+Run the following code to you can get the Initialize process output for the MLDatasetBuilder package.
+
+```sh
+>>> from MLDatasetBuilder import *
+>>> MLDatasetBuilder()
+```
+
+
 ### Available Operations
 
 1) ***Remove*** unwanted format images and ***Rename*** image files
 
 ```sh
-PrepareImage(folder_name, image_name)
-#PrepareImage('images', 'dog')
+#PrepareImage(folder_name, image_name)
+PrepareImage('images', 'dog')
 ```
 2) ***Extract images from video file***
 ```sh
-ExtractImages(video_path, filename, framesize)
-#ExtractImages('video.mp4', 'frame', 10)
+#ExtractImages(video_path, file_name, frame_size)
+ExtractImages('video.mp4', 'frame', 10)
+#OR
+#ExtractImages(video_path, filename)
+ExtractImages('video.mp4', 'frame')
+#Default FPS will be 5
 ```
+
+## Step1 — Get images from google
 
 ### Remove unwanted format images and Rename image files
 
@@ -104,6 +130,17 @@ test.py
 ```
 
 ![step_1](https://raw.githubusercontent.com/karthick965938/ML-Dataset-Builder/master/assets/step_3.gif)
+
+# Contributing
+All issues and pull requests are welcome! To run the code locally, first, fork the repository and then run the following commands on your computer:
+
+```sh
+git clone https://github.com/<your-username>/ML-Dataset-Builder.git
+cd ML-Dataset-Builder
+# Recommended creating a virtual environment before the next step
+pip3 install -r requirements.txt
+```
+When adding code, be sure to write unit tests where necessary.
 
 # Contact
 MLDatasetBuilder was created by [Karthick Nagarajan](https://stackoverflow.com/users/6295641/karthick-nagarajan?tab=profile). Feel free to reach out on [Twitter](https://twitter.com/Karthick965938) or through [Email!](karthick965938@gmail.com)
