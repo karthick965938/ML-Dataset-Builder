@@ -36,7 +36,7 @@ Run the following code to you can get the Initialize process output for the MLDa
 >>> from MLDatasetBuilder import *
 >>> MLDatasetBuilder()
 ```
-
+![package_sample_output](https://i1.wp.com/cdn-images-1.medium.com/max/800/1*h4KOBQoEjCaoUWjj0PzVjg.gif?ssl=1)
 
 ### Available Operations
 
