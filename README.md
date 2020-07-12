@@ -40,13 +40,13 @@ Run the following code to you can get the Initialize process output for the MLDa
 
 ### Available Operations
 
-1) ***Remove*** unwanted format images and ***Rename*** image files
+1) ***PrepareImage***  —  Remove unwanted format images and Rename your images
 
 ```sh
 #PrepareImage(folder_name, image_name)
 PrepareImage('images', 'dog')
 ```
-2) ***Extract images from video file***
+2) ***ExtractImages***  —  Extract images from video file
 ```sh
 #ExtractImages(video_path, file_name, frame_size)
 ExtractImages('video.mp4', 'frame', 10)
@@ -58,14 +58,14 @@ ExtractImages('video.mp4', 'frame')
 
 ## Step1 — Get images from google
 
-### Remove unwanted format images and Rename image files
-
-we can get images from Google. Using the [Download All Images](https://chrome.google.com/webstore/detail/download-all-images/ifipmflagepipjokmbdecpmjbibjnakm?hl=en) browser extension we can easily get images in a few minutes. You can check out [here](https://www.youtube.com/watch?v=ik1VxrtN7m8&feature=youtu.be) for more details about this extension!
+Yes, we can get images from Google. Using the [Download All Images](https://chrome.google.com/webstore/detail/download-all-images/ifipmflagepipjokmbdecpmjbibjnakm?hl=en) browser extension we can easily get images in a few minutes. You can check out [here](https://www.youtube.com/watch?v=ik1VxrtN7m8&feature=youtu.be) for more details about this extension!
 
 
 ![step_1](https://raw.githubusercontent.com/karthick965938/ML-Dataset-Builder/master/assets/step_01.gif)
 
-Once you have downloaded the images using this extension, you can create a python file called ***test_python_file.py*** the same directory as below.
+## Step2 — Create a Python file
+
+Once you have downloaded the images using this extension, you can create a python file called ***test.py*** the same directory as below.
 
 ```sh
 download_image_folder/
@@ -75,15 +75,23 @@ download_image_folder/
    image1.png
    image2.png
    ...
-test_python_file.py
+test.py
 ```
 Inside the images folder, you can see lots of png images and random filenames.
 
+## Step3 — PrepareImage
+
+MLDatasetBuilder provides a method called PrepareImage. Using this method to we can remove the unwanted images and rename your image files which are already you have downloaded from the browser’s extensions.
 
 ```sh
 PrepareImage(folder_name, image_name)
 #PrepareImage('images', 'dog')
 ```
+As per the above code, we need to mention the image folder path and class name.
+
+![step_1](https://raw.githubusercontent.com/karthick965938/ML-Dataset-Builder/master/assets/step_2.gif)
+
+After completing the process your image folder structure will look like below 
 
 ```sh
 download_image_folder/
@@ -95,18 +103,19 @@ download_image_folder/
    ...
 test.py
 ```
-![step_1](https://raw.githubusercontent.com/karthick965938/ML-Dataset-Builder/master/assets/step_2.gif)
 
 This process very helps to annotate your images while labeling. And of course, it will be like one of the standardized things.
 
+### Step4 — ExtractImage
 
-### Extract images from video file
+MLDatasetBuilder also provides a method called ExtractImages. Using this method we can extract the images from the video files.
 
 ```sh
 download_image_folder/
 video.mp4
 test.py
 ```
+As per the below code, we need to mention the video path, folder name, and framesize. Folder name will the class name and framesize’s default value 5 and it’s not mandatory.
 
 ```sh
 ExtractImages(video_path, folder_name, framesize)
@@ -114,7 +123,9 @@ ExtractImages(video_path, folder_name, framesize)
 ExtractImages(video_path, folder_name)
 #ExtractImages('video.mp4', 'frame')
 ```
+![step_1](https://raw.githubusercontent.com/karthick965938/ML-Dataset-Builder/master/assets/step_3.gif)
 
+After completing the process your image folder structure will look like below
 
 ```sh
 download_image_folder/
@@ -128,8 +139,6 @@ dog/
 dog.mp4
 test.py
 ```
-
-![step_1](https://raw.githubusercontent.com/karthick965938/ML-Dataset-Builder/master/assets/step_3.gif)
 
 # Contributing
 All issues and pull requests are welcome! To run the code locally, first, fork the repository and then run the following commands on your computer:
